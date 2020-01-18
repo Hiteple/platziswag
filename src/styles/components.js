@@ -216,7 +216,7 @@ export const StyledProductDetail = styled.div`
   height: 82vh;
   img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     margin: 0;
   }
