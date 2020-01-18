@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyledJumbo } from '../styles/components'
+import { Image } from './'
 
 export default function Jumbo({ description, title }) {
   return (
@@ -8,6 +9,7 @@ export default function Jumbo({ description, title }) {
         <h2>{title}</h2>
         <small>{description}</small>
       </div>
+      <Image name="icon" />
     </StyledJumbo>
   )
 }
