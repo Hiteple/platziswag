@@ -1,13 +1,13 @@
-import styled from "styled-components"
-import { above } from "./index"
+import styled from 'styled-components'
+import { above } from './index'
 
 export const colors = {
-  green: "#98ca3f",
-  orange: "#f8b71c",
-  gray: "#969696",
-  darkBlue: "#1c3643",
-  lightBlue: "#1e5372",
-  softGray: "#f6f8f9",
+  green: '#98ca3f',
+  orange: '#f8b71c',
+  gray: '#969696',
+  darkBlue: '#1c3643',
+  lightBlue: '#1e5372',
+  softGray: '#f6f8f9',
 }
 
 export const StyledHeader = styled.header`
@@ -309,7 +309,7 @@ export const MenuItem = styled.li`
   color: white;
   font-size: 1.3rem;
   font-weight: 100;
-  padding: ${({ margin }) => (margin ? "0 13px 0 13px" : "0 0 0 13px")};
+  padding: ${({ margin }) => (margin ? '0 13px 0 13px' : '0 0 0 13px')};
   a {
     color: white;
     text-decoration: none;
@@ -319,8 +319,8 @@ export const MenuItem = styled.li`
     width: 0.4rem;
   }
   ${above.medium`
-    border-right: ${({ margin }) => (margin ? "1px solid white" : "")};
-    padding: ${({ margin }) => (margin ? "0 26px 0 26px" : "0 0 0 26px")};
+    border-right: ${({ margin }) => (margin ? '1px solid white' : '')};
+    padding: ${({ margin }) => (margin ? '0 26px 0 26px' : '0 0 0 26px')};
     & img{
       margin-right: 5px; 
       width: 0.7rem;
@@ -412,19 +412,19 @@ export const SizeSelect = styled.div`
 export const Button = styled.button`
   cursor: pointer;
   background-color: ${({ type }) =>
-    type === "outline" ? "transparent" : colors.green};
-  color: ${({ type }) => (type === "outline" ? colors.darkBlue : "white")};
+    type === 'outline' ? 'transparent' : colors.green};
+  color: ${({ type }) => (type === 'outline' ? colors.darkBlue : 'white')};
   font-size: 0.9rem;
   padding: 0.6rem 1rem;
   font-weight: 500;
   border: ${({ type }) =>
-    type === "outline"
+    type === 'outline'
       ? `3px solid ${colors.darkBlue}`
       : `3px solid ${colors.green}`};
   border-radius: 12px;
   a {
     text-decoration: none;
-    color: ${({ type }) => (type === "outline" ? colors.darkBlue : "white")};
+    color: ${({ type }) => (type === 'outline' ? colors.darkBlue : 'white')};
   }
   &:disabled {
     background-color: ${colors.gray};

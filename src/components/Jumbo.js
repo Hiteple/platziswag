@@ -1,12 +1,12 @@
-import React from "react"
-import { StyledJumbo } from "../styles/components"
+import React from 'react'
+import { StyledJumbo } from '../styles/components'
 
-export default function Jumbo() {
+export default function Jumbo({ description, title }) {
   return (
     <StyledJumbo>
       <div>
-        <h2>Obtain the best products here in Platziswag!</h2>
-        <small>You're gonna love the view</small>
+        <h2>{title}</h2>
+        <small>{description}</small>
       </div>
     </StyledJumbo>
   )

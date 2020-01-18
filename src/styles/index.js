@@ -1,4 +1,4 @@
-import { css, createGlobalStyle } from "styled-components"
+import { css, createGlobalStyle } from 'styled-components'
 
 export const size = {
   small: 400,
