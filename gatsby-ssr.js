@@ -1,7 +1,13 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+const React = require('react')
+const { CartProvider } = require('./src/Context')
+const { GlobalStyles } = require('./src/styles')
+const Layout = require('./src/components/layout').default
 
-// You can delete this file if you're not using it
+exports.wrapRootElement = ({ element }) => {
+  return (
+    <CartProvider>
+      <GlobalStyles />
+      <Layout>{element}</Layout>
+    </CartProvider>
+  )
+}
